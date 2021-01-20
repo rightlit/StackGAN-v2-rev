@@ -5,29 +5,56 @@ File "/content/StackGAN-v2-rev/code/miscc/config.py", line 73, in _merge_a_into_
     for k, v in a.iteritems():
 AttributeError: 'EasyDict' object has no attribute 'iteritems'
 
+==> Python 3 renamed dict.iteritems -> dict.items
+
   File "/content/StackGAN-v2-rev/code/miscc/config.py", line 76, in _merge_a_into_b
     if not b.has_key(k):
 AttributeError: 'EasyDict' object has no attribute 'has_key'
+
+==> has_key was removed in Python 3. From the documentation:
+Removed dict.has_key() – use the in operator instead.
 
   File "/content/StackGAN-v2-rev/code/datasets.py", line 230, in load_bbox
     for i in xrange(0, numImgs):
 NameError: name 'xrange' is not defined
 
+==> You are trying to run a Python 2 codebase with Python 3. xrange() was renamed to range() in Python 3.
+
   File "/content/StackGAN-v2-rev/code/datasets.py", line 265, in load_embedding
     embeddings = pickle.load(f)
 UnicodeDecodeError: 'ascii' codec can't decode byte 0xbe in position 3: ordinal not in range(128)
+
+==> Instead of relying on a system setting, you should open your text files using an explicit codec:
+currentFile = open(filename, 'rt', encoding='latin1')
+where you set the encoding parameter to match the file you are reading.
 
   File "/content/StackGAN-v2-rev/code/datasets.py", line 244, in load_captions
     captions = f.read().decode('utf8').split('\n')
 AttributeError: 'str' object has no attribute 'decode'
 
+==> You are trying to decode an object that is already decoded. You have a str, there is no need to decode from UTF-8 anymore.
+Simply drop the .decode('utf-8') part:
+
   File "/content/StackGAN-v2-rev/code/trainer.py", line 20, in <module>
     from tensorboard import FileWriter
 ImportError: cannot import name 'FileWriter'
 
+==> Use tensorboard-pytorch (pip install tensorboard-pytorch). Do this:
+from torch.utils.tensorboard import summary
+from torch.utils.tensorboard import FileWriter
+instead of:
+from tensorboard import summary
+from tensorboard import FileWriter
+
 TypeError: Couldn't build proto file into descriptor pool!
 Invalid proto descriptor for file "tensorboard/compat/proto/tensor_shape.proto":
+
+==> Right, this is an issue with protobuf binary wheels. The work around it to install the pure python implementation or fix proto files, so they don't have namespace collisions.
+pip uninstall protobuf
+pip install --no-binary=protobuf protobuf
 
 File "/content/StackGAN-v2-rev/code/trainer.py", line 613, in train_Dnet
     summary_D = summary.scalar('D_loss%d' % idx, errD.data[0])
 IndexError: invalid index of a 0-dim tensor. Use `tensor.item()` in Python or `tensor.item<T>()` in C++ to convert a 0-dim tensor to a number
+
+==> That's because in PyTorch>=0.5, the index of 0-dim tensor is invalid. The master branch is designed for PyTorch 0.4.1, loss_val.data[0] works well.
