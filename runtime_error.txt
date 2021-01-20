@@ -1,0 +1,33 @@
+!python main.py --cfg cfg/birds_3stages.yml --gpu 0
+=================================================================================
+
+File "/content/StackGAN-v2-rev/code/miscc/config.py", line 73, in _merge_a_into_b
+    for k, v in a.iteritems():
+AttributeError: 'EasyDict' object has no attribute 'iteritems'
+
+  File "/content/StackGAN-v2-rev/code/miscc/config.py", line 76, in _merge_a_into_b
+    if not b.has_key(k):
+AttributeError: 'EasyDict' object has no attribute 'has_key'
+
+  File "/content/StackGAN-v2-rev/code/datasets.py", line 230, in load_bbox
+    for i in xrange(0, numImgs):
+NameError: name 'xrange' is not defined
+
+  File "/content/StackGAN-v2-rev/code/datasets.py", line 265, in load_embedding
+    embeddings = pickle.load(f)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xbe in position 3: ordinal not in range(128)
+
+  File "/content/StackGAN-v2-rev/code/datasets.py", line 244, in load_captions
+    captions = f.read().decode('utf8').split('\n')
+AttributeError: 'str' object has no attribute 'decode'
+
+  File "/content/StackGAN-v2-rev/code/trainer.py", line 20, in <module>
+    from tensorboard import FileWriter
+ImportError: cannot import name 'FileWriter'
+
+TypeError: Couldn't build proto file into descriptor pool!
+Invalid proto descriptor for file "tensorboard/compat/proto/tensor_shape.proto":
+
+File "/content/StackGAN-v2-rev/code/trainer.py", line 613, in train_Dnet
+    summary_D = summary.scalar('D_loss%d' % idx, errD.data[0])
+IndexError: invalid index of a 0-dim tensor. Use `tensor.item()` in Python or `tensor.item<T>()` in C++ to convert a 0-dim tensor to a number
