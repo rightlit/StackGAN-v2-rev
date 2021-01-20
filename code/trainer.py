@@ -16,8 +16,14 @@ from copy import deepcopy
 from miscc.config import cfg
 from miscc.utils import mkdir_p
 
-from tensorboard import summary
-from tensorboard import FileWriter
+#from tensorboard import summary
+#from tensorboard import FileWriter
+
+#from tensorboardX import summary
+#from tensorboardX import FileWriter
+
+from torch.utils.tensorboard import summary
+from torch.utils.tensorboard import FileWriter
 
 from model import G_NET, D_NET64, D_NET128, D_NET256, D_NET512, D_NET1024, INCEPTION_V3
 
@@ -604,7 +610,8 @@ class condGANTrainer(object):
         optD.step()
         # log
         if flag == 0:
-            summary_D = summary.scalar('D_loss%d' % idx, errD.data[0])
+            #summary_D = summary.scalar('D_loss%d' % idx, errD.data[0])
+            summary_D = summary.scalar('D_loss%d' % idx, errD.data)
             self.summary_writer.add_summary(summary_D, count)
         return errD
 
@@ -624,7 +631,8 @@ class condGANTrainer(object):
                 errG = errG + errG_patch
             errG_total = errG_total + errG
             if flag == 0:
-                summary_D = summary.scalar('G_loss%d' % i, errG.data[0])
+                #summary_D = summary.scalar('G_loss%d' % i, errG.data[0])
+                summary_D = summary.scalar('G_loss%d' % i, errG.data)
                 self.summary_writer.add_summary(summary_D, count)
 
         # Compute color consistency losses
@@ -733,9 +741,12 @@ class condGANTrainer(object):
                 predictions.append(pred.data.cpu().numpy())
 
                 if count % 100 == 0:
-                    summary_D = summary.scalar('D_loss', errD_total.data[0])
-                    summary_G = summary.scalar('G_loss', errG_total.data[0])
-                    summary_KL = summary.scalar('KL_loss', kl_loss.data[0])
+                    #summary_D = summary.scalar('D_loss', errD_total.data[0])
+                    #summary_G = summary.scalar('G_loss', errG_total.data[0])
+                    #summary_KL = summary.scalar('KL_loss', kl_loss.data[0])
+                    summary_D = summary.scalar('D_loss', errD_total.data)
+                    summary_G = summary.scalar('G_loss', errG_total.data)
+                    summary_KL = summary.scalar('KL_loss', kl_loss.data)
                     self.summary_writer.add_summary(summary_D, count)
                     self.summary_writer.add_summary(summary_G, count)
                     self.summary_writer.add_summary(summary_KL, count)
@@ -775,8 +786,8 @@ class condGANTrainer(object):
                          Loss_D: %.2f Loss_G: %.2f Loss_KL: %.2f Time: %.2fs
                       '''  # D(real): %.4f D(wrong):%.4f  D(fake) %.4f
                   % (epoch, self.max_epoch, self.num_batches,
-                     errD_total.data[0], errG_total.data[0],
-                     kl_loss.data[0], end_t - start_t))
+                     errD_total.data, errG_total.data,
+                     kl_loss.data, end_t - start_t))
 
         save_model(self.netG, avg_param_G, self.netsD, count, self.model_dir)
         self.summary_writer.close()
