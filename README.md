@@ -46,6 +46,12 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 ![](./models/birds_3stages/iteration210000/single_samples/valid/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111_256_sentence0.png)
 ![](./models/birds_3stages/iteration210000/single_samples/valid/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111_256_sentence1.png)
 ![](./models/birds_3stages/iteration210000/single_samples/valid/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111_256_sentence2.png)
+![](./models/birds_3stages/iteration210000/single_samples/valid/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111_256_sentence3.png)
+![](./models/birds_3stages/iteration210000/single_samples/valid/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111_256_sentence4.png)
+![](./models/birds_3stages/iteration210000/single_samples/valid/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111_256_sentence5.png)
+![](./models/birds_3stages/iteration210000/single_samples/valid/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111_256_sentence6.png)
+![](./models/birds_3stages/iteration210000/single_samples/valid/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111_256_sentence7.png)
+![](./models/birds_3stages/iteration210000/single_samples/valid/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111_256_sentence8.png)
 
 Tsne visualization of randomly generated [birds](https://github.com/hanzhanggit/StackGAN-v2/blob/master/examples/bird_res256_grid50x50.jpg), [dogs](https://github.com/hanzhanggit/StackGAN-v2/blob/master/examples/dog_res256_grid50x50.jpg), [cats](https://github.com/hanzhanggit/StackGAN-v2/blob/master/examples/cat_res256_grid50x50.jpg), [churchs](https://github.com/hanzhanggit/StackGAN-v2/blob/master/examples/church_res256_grid50x50.jpg) and [bedrooms](https://github.com/hanzhanggit/StackGAN-v2/blob/master/examples/bedroom_res256_grid50x50.jpg)
 
