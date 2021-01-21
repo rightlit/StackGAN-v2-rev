@@ -19,11 +19,13 @@ from miscc.utils import mkdir_p
 #from tensorboard import summary
 #from tensorboard import FileWriter
 
-#from tensorboardX import summary
-#from tensorboardX import FileWriter
+# for eval
+from tensorboardX import summary
+from tensorboardX import FileWriter
 
-from torch.utils.tensorboard import summary
-from torch.utils.tensorboard import FileWriter
+# for train
+#from torch.utils.tensorboard import summary
+#from torch.utils.tensorboard import FileWriter
 
 from model import G_NET, D_NET64, D_NET128, D_NET256, D_NET512, D_NET1024, INCEPTION_V3
 
