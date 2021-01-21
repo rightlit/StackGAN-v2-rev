@@ -46,13 +46,22 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 - the medium sized bird has a dark grey color, a black downward curved beak, and long wings.
 - the bird is dark grey brown with a thick curved bill and a flat shaped tail.
 - bird has brown body feathers, white breast feathers and black beak
+
 ![](./models/birds_3stages/iteration210000/single_samples/valid/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111_256_sentence0.png)
 ![](./models/birds_3stages/iteration210000/single_samples/valid/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111_256_sentence1.png)
 ![](./models/birds_3stages/iteration210000/single_samples/valid/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111_256_sentence2.png)
 
+- this bird has a dark brown overall body color, with a small white patch around the base of the bill.
+- the bird has very long and large brown wings, as well as a black body and a long black beak.
+- it is a type of albatross with black wings, tail, back and beak, and has a white ring at the base of its beak.
+
 ![](./models/birds_3stages/iteration210000/single_samples/valid/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111_256_sentence3.png)
 ![](./models/birds_3stages/iteration210000/single_samples/valid/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111_256_sentence4.png)
 ![](./models/birds_3stages/iteration210000/single_samples/valid/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111_256_sentence5.png)
+
+- this bird has brown plumage and a white ring at the base of its long, curved brown beak.
+- the entire body is dark brown, as is the bill, with a white band encircling where the bill meets the head.
+- this bird is gray in color, with a large curved beak.
 
 ![](./models/birds_3stages/iteration210000/single_samples/valid/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111_256_sentence6.png)
 ![](./models/birds_3stages/iteration210000/single_samples/valid/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111_256_sentence7.png)
