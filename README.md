@@ -9,7 +9,7 @@ Pytorch implementation for reproducing StackGAN_v2 results in the paper [StackGA
 ### Dependencies
 python 3.6
 
-Pytorch
+Pytorch 1.7.0+cu101
 
 In addition, please add the project folder to PYTHONPATH and `pip install` the following packages:
 - `tensorboardX` or `pytorch-tensorbord`
