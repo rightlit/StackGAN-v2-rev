@@ -67,6 +67,14 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 - the entire body is dark brown, as is the bill, with a white band encircling where the bill meets the head.
 - this bird is gray in color, with a large curved beak.
 
+![](./models/flowers_3stages/iteration176052/single_samples/valid/jpg/image_06734_256_sentence0.png)
+![](./models/flowers_3stages/iteration176052/single_samples/valid/jpg/image_06734_256_sentence1.png)
+![](./models/flowers_3stages/iteration176052/single_samples/valid/jpg/image_06734_256_sentence2.png)
+
+- the petals of the flower are pink in color and have a yellow center.
+- this flower is pink and white in color, with petals that are multi colored.
+- the geographical shapes of the bright purple petals set off the orange stamen and filament and the cross shaped stigma is beautiful.
+
 Tsne visualization of randomly generated [birds](https://github.com/hanzhanggit/StackGAN-v2/blob/master/examples/bird_res256_grid50x50.jpg), [dogs](https://github.com/hanzhanggit/StackGAN-v2/blob/master/examples/dog_res256_grid50x50.jpg), [cats](https://github.com/hanzhanggit/StackGAN-v2/blob/master/examples/cat_res256_grid50x50.jpg), [churchs](https://github.com/hanzhanggit/StackGAN-v2/blob/master/examples/church_res256_grid50x50.jpg) and [bedrooms](https://github.com/hanzhanggit/StackGAN-v2/blob/master/examples/bedroom_res256_grid50x50.jpg)
 
 
