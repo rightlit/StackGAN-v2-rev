@@ -75,6 +75,23 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 - this flower is pink and white in color, with petals that are multi colored.
 - the geographical shapes of the bright purple petals set off the orange stamen and filament and the cross shaped stigma is beautiful.
 
+![](./models/flowers_3stages/iteration176052/single_samples/valid/jpg/image_06734_256_sentence3.png)
+![](./models/flowers_3stages/iteration176052/single_samples/valid/jpg/image_06734_256_sentence4.png)
+![](./models/flowers_3stages/iteration176052/single_samples/valid/jpg/image_06734_256_sentence5.png)
+
+- the purple petals have shades of white with white anther and filament
+- this flower has large pink petals and a white stigma in the center
+- this flower has petals that are pink and has a yellow stamen
+
+![](./models/flowers_3stages/iteration176052/single_samples/valid/jpg/image_06734_256_sentence6.png)
+![](./models/flowers_3stages/iteration176052/single_samples/valid/jpg/image_06734_256_sentence7.png)
+![](./models/flowers_3stages/iteration176052/single_samples/valid/jpg/image_06734_256_sentence8.png)
+
+- a flower with short and wide petals that is light purple.
+- this flower has small pink petals with a yellow center.
+- this flower has large rounded pink petals with curved edges and purple veins.
+
+
 Tsne visualization of randomly generated [birds](https://github.com/hanzhanggit/StackGAN-v2/blob/master/examples/bird_res256_grid50x50.jpg), [dogs](https://github.com/hanzhanggit/StackGAN-v2/blob/master/examples/dog_res256_grid50x50.jpg), [cats](https://github.com/hanzhanggit/StackGAN-v2/blob/master/examples/cat_res256_grid50x50.jpg), [churchs](https://github.com/hanzhanggit/StackGAN-v2/blob/master/examples/church_res256_grid50x50.jpg) and [bedrooms](https://github.com/hanzhanggit/StackGAN-v2/blob/master/examples/bedroom_res256_grid50x50.jpg)
 
 
