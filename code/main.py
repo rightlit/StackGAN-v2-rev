@@ -100,7 +100,7 @@ if __name__ == "__main__":
 
     split_dir, bshuffle = 'train', True
     if not cfg.TRAIN.FLAG:
-        if cfg.DATASET_NAME == 'birds':
+        if cfg.DATASET_NAME == 'birds' or cfg.DATASET_NAME == 'flowers':
             bshuffle = False
             split_dir = 'test'
 
