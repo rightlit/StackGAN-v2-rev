@@ -23,7 +23,7 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 
 **Training**
 
-- Train a StackGAN-v2 model on the bird (CUB) or flowers dataset using our preprocessed embeddings:
+- Train a StackGAN-v2 model on the bird (CUB) or flower (Oxford102) dataset using our preprocessed embeddings:
   -  `python main.py --cfg cfg/birds_3stages.yml --gpu 0`
   -  `python main.py --cfg cfg/flowers_3stages.yml --gpu 0`
 - If you want to try your own datasets, [here](https://github.com/soumith/ganhacks) are some good tips about how to train GAN. Also, we encourage to try different hyper-parameters and architectures, especially for more complex datasets.
