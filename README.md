@@ -37,6 +37,7 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 
 **Evaluating**
 - Run `python main.py --cfg cfg/eval_birds.yml --gpu 1` to generate samples from captions in birds validation set.
+- Run `python main.py --cfg cfg/eval_flowers.yml --gpu 1` to generate samples from captions in flowers validation set.
 - Change the `eval_*.yml` files to generate images from other pre-trained models. 
 
 
