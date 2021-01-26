@@ -1,8 +1,10 @@
 # StackGAN-v2 revision for Colab
 
-Pytorch implementation for reproducing StackGAN_v2 results in the paper [StackGAN++: Realistic Image Synthesis with Stacked Generative Adversarial Networks](https://arxiv.org/abs/1710.10916) by Han Zhang*, Tao Xu*, Hongsheng Li, Shaoting Zhang, Xiaogang Wang,   Xiaolei Huang, Dimitris Metaxas.
+This is StackGAN_v2 revised version for Google Colab.
 
-<img src="examples/framework.jpg" width="900px" height="350px"/>
+Refer to [https://github.com/hanzhanggit/StackGAN-v2](https://github.com/hanzhanggit/StackGAN-v2) for original source version.
+
+Refre to [troubleshooting](https://github.com/rightlit/StackGAN-v2-rev/issues) while executing in original source 
 
 
 
