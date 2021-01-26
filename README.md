@@ -4,7 +4,7 @@ This is StackGAN_v2 revised version for Google Colab.
 
 Refer to [https://github.com/hanzhanggit/StackGAN-v2](https://github.com/hanzhanggit/StackGAN-v2) for original source version.
 
-Refre to [troubleshooting](https://github.com/rightlit/StackGAN-v2-rev/issues) while running with original source 
+Refer to [troubleshooting](https://github.com/rightlit/StackGAN-v2-rev/issues) while running with original source 
 
 
 
