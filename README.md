@@ -2,9 +2,8 @@
 
 This is StackGAN_v2 revised version for Google Colab.
 
-Refer to [https://github.com/hanzhanggit/StackGAN-v2](https://github.com/hanzhanggit/StackGAN-v2) for original source version.
-
-This is implementation for the paper [StackGAN++: Realistic Image Synthesis with Stacked Generative Adversarial Networks](https://arxiv.org/abs/1710.10916).
+Refer to [https://github.com/hanzhanggit/StackGAN-v2](https://github.com/hanzhanggit/StackGAN-v2) for original source version, <br>
+it is implementation for the paper [StackGAN++: Realistic Image Synthesis with Stacked Generative Adversarial Networks](https://arxiv.org/abs/1710.10916).
 
 Refer to troubleshooting [issues](https://github.com/rightlit/StackGAN-v2-rev/issues) while running with original source 
 
