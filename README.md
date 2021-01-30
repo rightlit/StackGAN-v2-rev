@@ -24,19 +24,6 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
   - [Optional] Follow the instructions [reedscot/icml2016](https://github.com/reedscot/icml2016) to download the pretrained char-CNN-RNN text encoders and extract text embeddings.
 2. Download the [birds](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) and [flowers](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/) image data. Extract them to `Data/birds/` and `Data/flowers/`, respectively.
 
-**Training**
-
-- Train a StackGAN-v2 model on the bird (CUB) or flower (Oxford102) dataset using our preprocessed embeddings:
-  -  `python main.py --cfg cfg/birds_3stages.yml --gpu 0`
-  -  `python main.py --cfg cfg/flowers_3stages.yml --gpu 0`
-- If you want to try your own datasets, [here](https://github.com/soumith/ganhacks) are some good tips about how to train GAN. Also, we encourage to try different hyper-parameters and architectures, especially for more complex datasets.
-
-
-
-**Pretrained Model**
-- [StackGAN-v2 for bird](https://drive.google.com/open?id=1s5Yf3nFiXx0lltMFOiJWB6s1LP24RcwH). Download and save it to `models/` (The [inception score](https://github.com/hanzhanggit/StackGAN-inception-model) for this Model is 4.04±0.05)
-
-
 
 **Evaluating**
 - Run `python main.py --cfg cfg/eval_birds.yml --gpu 1` to generate samples from captions in birds validation set.
